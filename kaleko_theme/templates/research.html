@@ -1,0 +1,180 @@
+<!-- Blog Section -->
+<section class="success" id="research">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	<h2>Research</h2>
+	<hr class="angle-double-down-light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+	<h2><font style="color: yellow;"> MicroBooNE </font></h2>
+	<img src="{{ SITEURL }}/images/microboone-redlight.jpg" title="Inside Cryostat" style="width:100%;height:100%;" vspace="10">
+      </div>
+      <div class="col-sm-6">
+	<p>I am currently a member of Michael Shaevitz's
+	  <a href="https://www.nevis.columbia.edu/~shaevitz/" style="color: cyan; text-decoration: underline"> neutrino physics group</a>
+	  at
+	  <a href="https://www.nevis.columbia.edu" style="color: cyan; text-decoration: underline"> Nevis Labs.</a>
+	  (Columbia University, NY). My main research focus is
+	  <a href="http://www-microboone.fnal.gov" style="color: cyan; text-decoration: underline">MicroBooNE experiment</a>.
+	</p>
+	<p>We use a
+	  <a href="https://en.wikipedia.org/wiki/Time_projection_chamber#The_Liquid_Argon_Time_Projection_Chamber_.28LArTPC.29"
+	     style="color: cyan; text-decoration: underline">liquid argon time projection chamber (LArTPC)</a> to detect
+	  electron neutrinos produced by booster neutrino beamline, an accelearator complex at
+	  <a href="https://en.wikipedia.org/wiki/Fermilab" style="color: cyan; text-decoration: underline">
+	    Fermi National Laboratory</a>. The physics objective of MicroBooNE is to investigate the nature of excess electron
+	  neutrino events observed by
+	  <a href="https://en.wikipedia.org/wiki/MiniBooNE" style="color: cyan; text-decoration: underline">
+	    MiniBooNE experiment</a>, which is hard to explain by our
+	  <a href="https://en.wikipedia.org/wiki/Neutrino_oscillation" style="color: cyan; text-decoration: underline">
+	    current understanding of neutrinos</a>.</p>
+	<p>LArTPC is essentially a "camera" which produce essentially
+	  <a href="http://www.symmetrymagazine.org/sites/default/files/images/standard/neutrino_candidate_event-s_0.jpg"
+	     style="color: cyan; text-decoration: underline">images of charge particles traveling in the detector</a>.
+	  This detailed image data can tell us more about the physics nature of observed excess, and shed
+	  light to its implication to our understanding about this elusive elementary particle.
+      </div>
+    </div>
+    <br>
+    <br>
+    <h2><font style="color: yellow;">Event Reconstruction</font></h2>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	<iframe width="100%" height="420px" 
+		src="https://www.youtube.com/embed/vaoaeEBRYec?autoplay=1&playlist=vaoaeEBRYec&loop=1&controls=0">
+	</iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	<p> Though the LArTPC detector provides us great details of particle interactions inside the detector, interpreting
+	  the full details is a non-trivial task. In order to extract high level physics information, we must "reconstruct"
+	  each neutrino event first, which means we must combine multiple 2D projections from the same event and understand 3D
+	  topology and calorimetric nature of particles. The movie shown above is a result of running
+	  <a href="http://www.phy.bnl.gov/wire-cell/"
+	     style="color: cyan; text-decoration: underline">the WireCell</a>
+	  reconstruction tool, which operates very complicated hand-written algorithms to generate this stunning view.
+	  However this step takes a great deal of computation time, and clustering of dots and recognition of particles
+	  are yet to be performed.</p>
+      </div>
+    </div>
+    <br></br>
+    <div class="row">
+      <div class="col-sm-6">
+	<h2><font style="color: yellow;">Deep Learning</font></h2>
+	<figure>
+	  <img src="{{ SITEURL }}/images/NuDetectionCropped.jpg" title="Neutrino Detection" style="width:100%;height:100%;">
+	  <center><figcaption><font size=4 color="white">
+		A trained deep neural network (AlexNet + Faster-RCNN) detecting the local region (red box) in which it thinks
+		a neutrino interaction exists. The yellow box is the right answer drawn by us, and is hidden when the network
+		analyze this image. 		
+	  </font></figcaption></center>
+	</figure>
+	<br></br>
+      </div>
+      <div class="coll-sm-6">
+	<br>
+	<br>
+	<p> I am attacking this event reconstruction and physics analysis challenge from a different perspective using
+	  machine learning algorithms. In particular I am interested in applying
+	  <a href="https://en.wikipedia.org/wiki/Deep_learning"
+	     style="color: cyan; text-decoration: underline">Deep Learning</a>,
+	  the state-of-the-art machine learning algorithm in the field of artificial intelligence and computer vision,
+	  to analyze LArTPC image data. Deep learning has found a vast number of applications ranging from automated
+	  <a href="https://en.wikipedia.org/wiki/DeepFace"
+	     style="color: cyan; text-decoration: underline">human face recognition</a>,
+	  real-time object detection for 
+	  <a href="https://www.youtube.com/watch?v=fbWeKhAPMig"
+	     style="color: cyan; text-decoration: underline">self-driving cars</a>,
+	  <a href="http://www.nature.com/news/deep-learning-boosts-google-translate-tool-1.20696"
+	     style="color: cyan; text-decoration: underline">teaching a robot Chinese</a>,
+	  and even
+	  <a href="https://en.wikipedia.org/wiki/AlphaGo"
+	     style="color: cyan; text-decoration: underline">playing Go</a>.
+	  So I thought it is time to do this in physics!</p>
+	<p>Recently we
+	  <a href="https://arxiv.org/abs/1611.05531"
+	     style="color: cyan; text-decoration: underline">published a paper</a>
+	  in which we report the first application of the technique to LArTPC image data
+	  in the field. The result clearly showed that computers "learned" useful features in a LArTPC image to perform
+	  a given task. We are interested in expanding the application further into more generic event reconstruction.
+	</p>
+	<p>I am happy to have advice from anyone with expertise in the field of machine learning as I only started this
+	  effort in early 2016. Please contact me if you have comments or suggestions!</p>
+      </div>
+    </div>
+    <br></br>
+    <div class="row">
+      <div class="col-sm-6">
+	<h2><font style="color: yellow;">Work on Electronics</font></h2>
+	<figure>
+	  <img src="{{ SITEURL }}/images/readout.jpg" title="Readout Electronics Crates" style="width:100%;height:100%;">
+	  <center><figcaption><font size=4 color="white">
+		MicroBooNE collects TPC and PMT data from total of 10 readout crates. Our group was responsible for the
+		production of readout electronics boards, installation, and commissioning. 
+	  </font></figcaption></center>
+	</figure>
+	<br></br>
+      </div>
+      <div class="coll-sm-6">
+	<p> Columbia University is reponsible for delivering the readout electronics hardware for the experiment.
+	  I have co-led the group for development, installation and commissioning of these electronics.
+	  Now I am leading the group for smooth detector operations. You can
+	  <a href="https://www.nevis.columbia.edu/~kazuhiro/docs/readout-electronics.pdf"
+	     style="color: cyan; text-decoration: underline;">read here</a>
+	  for the details of the system. Brief description is given below.</p>
+	<p> When the accelerator complex notify us the arrival of neutrino beam, the trigger module issues a signal
+	  to all readout electronics modules to readout data. There are total of 8256 TPC wires and 64 PMT channels
+	  to be readout. For each event, the front-end modules (FEMs) records a TPC waveform for 4.8 milli-seconds,
+	  digitized at 2 MHz, from all 8256 channels. The FEMs are equipped with a type of
+	  <a href="https://en.wikipedia.org/wiki/Huffman_coding"
+	     style="color: cyan; text-decoration: underline;">huffman compression algorithm</a>
+	  that compress the data by a factor of 5 from the raw rate of 150 MByte/second.
+	  The PMT waveforms are digitized at 64 MHz, and hence it requires a further reduction of data rate.
+	  Our PMT FEM achieves this by applying zero-suppression after locating a signal region
+	  using a
+	  <a href="https://en.wikipedia.org/wiki/Constant_fraction_discriminator"
+	     style="color: cyan; text-decoration: underline;">
+	    constant fraction differentiator </a>
+	  logic. 
+	  These algorithms in PMT and TPC FEMs are programmed in
+	  <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array"
+	     style="color: cyan; text-decoration: underline;">FPGA</a>
+	  which realizes extremely fast data processing speed.
+	  Collected data from FEMs are sent to data acquisition server using XMIT data transmitter module via
+	  optical fiber cable. 
+	  </p>
+      </div>
+    </div>
+    <br></br>
+    <div class="row">
+      <div class="col-lg-12">
+	<h2><font style="color: yellow;">Software Development</font></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+	<p>I have developed
+	  <a href="https://www.nevis.columbia.edu/~kazuhiro/docs/list-softwares.pdf"
+	     style="color: cyan; text-decorate: underline;">
+	    a lot of software</a>
+	  critical for operationg the whole experiment as well as analyses.</p>
+
+	<p>Some examples are large scale data
+	  processing framework to handle inter-cluster file transfer protocols, gird job management system for
+	  multi-stage data production, and data analysis framework. Most of my software are written in C++/Python
+	  and also SQL when needed. See the link above for a list of softwares I developed in MicroBooNE and Double Chooz!</p>
+	  
+	<p>I hold C++/Python software workshop occasionally to better educate students and post-docs (and sometimes
+	  senior PIs!) because I believe it is an essential skill that is not taught properly in our field unfortunately.
+	  Here's an
+	  <a href="https://www.nevis.columbia.edu/~kazuhiro/Summer2015_CPPTutorial_00.pdf"
+	     style="color: cyan; text-decorate: underline;">example from Summer 2015</a>
+	  given to summer students. Feel contact me if you are interested in having one!</p>
+      </div>
+    </div>
+  </div>
+</section>
